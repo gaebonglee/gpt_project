@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="실습참고.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0"
+    />
+
+    <title>hp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="hp_logo.png" alt="로고" class="logo" />
+        <div class="icons">
+          <span class="material-symbols-outlined"> location_on</span>
+          <span class="material-symbols-outlined"> notifications</span>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="box box1">
+          <h2 class="title">제목</h2>
+          <p class="small-text">작은 글씨</p>
+          <h3 class="bold-text">중간 진한 글씨</h3>
+        </div>
+
+        <div class="box box2">
+          <div class="card">
+            <p class="small-text">작은 글씨</p>
+            <h3 class="bold-text">중간 진한 글씨</h3>
+          </div>
+
+          <div class="card">
+            <p class="small-text">작은 글씨</p>
+            <h3 class="bold-text">중간 진한 글씨</h3>
+          </div>
+
+          <div class="card">
+            <p class="small-text">작은 글씨</p>
+            <h3 class="bold-text">중간 진한 글씨</h3>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <div class="button-group">
+            <button class="gray-button">버튼1</button>
+            <button class="gray-button">버튼2</button>
+          </div>
+        </div>
+
+        <div class="privacy-policy">개인정보처리방침 보기</div>
+      </div>
+
+      <div class="footer">
+        <span class="material-symbols-outlined"> home</span>
+        <span class="material-symbols-outlined"> diamond</span>
+        <span class="material-symbols-outlined"> wallet</span>
+        <span class="material-symbols-outlined"> stacked_line_chart</span>
+        <span class="material-symbols-outlined"> menu</span>
+      </div>
+    </div>
+  </body>
+</html>
+----------------------------------------------------------------
+.container {
+  width: 390px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+/* justify-content: space-between 
+     >> 요소들이 수직 가운데 정렬되도록 함
+  */
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  width: 60px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.box {
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+/*
+  padding, border-radius 
+  >> 박스 내부와 모서리를 둥글게 만들어 줌
+  
+  display, flex-direction: column 
+  >> 요소들이 수직으로 정렬
+  
+  */
+.box2 {
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*
+  display:flex, justify-content: space-between 속성 추가 
+  >> 카드들이 가로 정렬 
+  */
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+/*
+   display: flex,   flex-direction: column 추가 
+   >> 버튼을 세로로 정렬
+  */
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.small-text {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.bold-text {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.box3 {
+  background-color: transparent;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/*height: fit-content;
+    >> box 높이가 버튼 높이에 맞게 조정
+  */
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gray-button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.privacy-policy {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.footer_img {
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+}
+
+.footer_icon {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.footer_icon_img {
+  width: 30px;
+  height: 30px;
+}

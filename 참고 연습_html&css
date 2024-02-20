@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="01_hp.css" />
+    <title>웹 기반 어플리케이션 레이아웃</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="hp_logo.png" alt="로고" class="logo" />
+
+        <div class="header_icons">
+          <i class="ri-map-pin-2-fill"></i>
+          <i class="ri-notification-2-fill"></i>
+        </div>
+      </div>
+
+      <div class="main">
+        <div class="box box1">
+          <h2 class="title">투자</h2>
+          <p class="small-text">증권 계좌 연결하고</p>
+          <h3 class="bold-text">포트폴리오 모아보기</h3>
+        </div>
+
+        <div class="box box2">
+          <div class="card">
+            <p class="small-text">안전하게</p>
+            <h3 class="bold-text">신용점수 보기</h3>
+          </div>
+
+          <div class="card">
+            <p class="small-text">최대14만원</p>
+            <h3 class="bold-text">카드 혜택 받기</h3>
+          </div>
+
+          <div class="card">
+            <p class="small-text">최근</p>
+            <h3 class="bold-text">공동구매</h3>
+          </div>
+        </div>
+
+        <div class="box box3">
+          <div class="button-group">
+            <button class="gray-button">화면 설정</button>
+            <button class="gray-button">자산 추가</button>
+          </div>
+        </div>
+
+        <div class="privacy-policy">개인정보처리방침 보기</div>
+      </div>
+
+      <footer>
+        <div class="footer_icons">
+          <i class="ri-home-5-fill"><p>홈</p></i>
+          <i class="ri-vip-diamond-fill"><p>혜택</p></i>
+          <i class="ri-wallet-fill"><p>페이</p></i>
+          <i class="ri-line-chart-fill"><p>주식</p></i>
+          <i class="ri-menu-line"><p>전체</p></i>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+----------------------------------------------------------------------
+.container {
+  width: 390px;
+  margin: 0 auto;
+  background-color: #f5f5f5;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 50px;
+}
+
+.header_icons,
+.footer_icons {
+  font-size: 25px;
+}
+
+.main {
+  padding: 20px;
+}
+
+.box {
+  height: 100px;
+  background-color: #fff;
+  margin-bottom: 20px;
+}
+
+.box1 {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.box2 {
+  height: 100px;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.card:last-child {
+  margin-right: 0;
+}
+
+.small-text {
+  font-size: 12px;
+  margin: 5px 0;
+}
+
+.bold-text {
+  font-weight: bold;
+  margin: 5px 0;
+}
+
+.box3 {
+  background-color: transparent;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.gray-button {
+  background-color: #ccc;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.privacy-policy {
+  margin-top: 20px;
+  text-align: center;
+}
+
+footer {
+  margin-top: 20px;
+  padding: 0 10px 0 10px;
+}
+.footer_icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_icons p {
+  font-size: 13px;
+  margin-top: -1px;
+  text-align: center;
+}
+.privacy-button {
+  display: block;
+  text-decoration: none;
+  color: black;
+  margin-top: 20px;
+}

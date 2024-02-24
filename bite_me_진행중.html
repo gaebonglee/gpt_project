@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>bite_me_web</title>
+    <link rel="stylesheet" href="bite_me.css" />
+    <link rel="stylesheet" href="bite_me_slide.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="container">
+      <!--header 수정 -->
+
+      <header>
+        <div class="header-box1">
+          <div class="header-box1-right">
+            <a href="#">회원가입</a>
+            <a href="#">로그인</a>
+            <a href="#">고객센터</a>
+          </div>
+        </div>
+
+        <div class="header-box2">
+          <div class="header-box2-left">
+            <span style="color: rgb(255, 170, 0)">BITE ME</span>
+          </div>
+          <div class="header-box2-center">
+            <form>
+              <input
+                type="text"
+                id="search"
+                name="search"
+                placeholder="검색어를 입력해주세요"
+              />
+              <button type="submit">
+                <span><i class="ri-search-2-line"></i></span>
+              </button>
+            </form>
+          </div>
+
+          <div class="header-box2-right">
+            <span><i class="ri-map-pin-2-line"></i></span>
+            <span><i class="ri-heart-3-fill"></i></span>
+            <span><i class="ri-shopping-cart-line"></i></span>
+          </div>
+        </div>
+      </header>
+
+      <!-- nav icon 수정 -->
+      <nav>
+        <div class="nav-left">
+          <span><i class="ri-menu-line"></i></span>
+          <span class="category-text">카테고리</span>
+        </div>
+
+        <div class="nav-center">
+          <a href="#">베스트</a>
+          <a href="#">의류단독할인</a>
+          <a href="#">이벤트/혜택</a>
+          <a href="#">브랜드관</a>
+          <a href="#">첫구매100원~</a>
+          <a href="#">월간바잇미</a>
+        </div>
+
+        <div class="nav-right">
+          <button class="btn">바룬티어 3기</button>
+        </div>
+      </nav>
+
+      <!-- box1 (content, title / card (image, icon))-->
+      <div class="box1">
+        <!--main-slider-->
+        <main>
+          <div class="sliders_wrapper">
+            <div class="sliders_container">
+              <input
+                type="radio"
+                class="sliders_input"
+                name="slide"
+                id="c1"
+                checked
+              />
+              <label for="c1" class="slider"></label>
+              <input type="radio" name="slide" id="c2" />
+              <label for="c2" class="slider"> </label>
+
+              <input type="radio" name="slide" id="c3" />
+              <label for="c3" class="slider"></label>
+
+              <input type="radio" name="slide" id="c4" />
+              <label for="c4" class="slider"> </label>
+
+              <input type="radio" name="slide" id="c5" />
+              <label for="c5" class="slider"> </label>
+
+              <input type="radio" name="slide" id="c6" />
+              <label for="c6" class="slider"> </label>
+            </div>
+          </div>
+        </main>
+        <!--main-slider-->
+      </div>
+
+      <!-- box2 -->
+      <div class="box2">
+        <div class="box2_text_wrap">
+          <h2>오늘의 신상품</h2>
+          <span>신상품을 소개합니다.</span>
+        </div>
+        <div class="card-container">
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://img.biteme.co.kr/product/320/daaa7c850081f157012f675f5ae6b8fd.jpg"
+                alt="상품1"
+              />
+              <div class="card-icon">
+                <i class="ri-shopping-bag-2-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>바잇미 부리또 노즈워크 장난감</h3>
+              <p>15,000원</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://img.biteme.co.kr/product/320/60ef5d70088135ec589dcf1c352682fa.jpg"
+                alt="상품2"
+              />
+              <div class="card-icon">
+                <i class="ri-shopping-bag-2-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>애플사이다레시피 강아지 유모차 라이너&가드 SET</h3>
+              <p>81,000원</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://img.biteme.co.kr/product/320/76ccbfb0c8f117f17c5d42293284eba5.jpg"
+                alt="상품3"
+              />
+              <!-- card-icon 수정 -->
+              <div class="card-icon">
+                <i class="ri-shopping-bag-2-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>밤스스튜디오 러브 하트 시스루 리본 나시티</h3>
+              <p>57,000원</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                src="https://img.biteme.co.kr/product/320/21998b01c940902a04371fe0517a7406.png"
+                alt="상품4"
+              />
+              <!-- card-icon 수정 -->
+              <div class="card-icon">
+                <i class="ri-shopping-bag-2-line"></i>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>핏펫 짱구는 못말려 흰둥이 배변패드 대형(60매)</h3>
+              <p>18,800원</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
